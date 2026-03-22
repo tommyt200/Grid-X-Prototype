@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-X | P2P Energy Trading Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts for modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons for UI -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Chart.js for data visualization -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div id="app" class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="logo-container">
+                <i class="ph-fill ph-lightning logo-icon"></i>
+                <span class="logo-text">Grid-X</span>
+            </div>
+            <nav class="nav-menu">
+                <button class="nav-item active" data-path="/">
+                    <i class="ph ph-house"></i>
+                    <span>Home</span>
+                </button>
+                <button class="nav-item" data-path="/generator">
+                    <i class="ph ph-solar-panel"></i>
+                    <span>Generator</span>
+                </button>
+                <button class="nav-item" data-path="/consumer">
+                    <i class="ph ph-factory"></i>
+                    <span>Consumer</span>
+                </button>
+                <button class="nav-item" data-path="/admin">
+                    <i class="ph ph-globe-hemisphere-west"></i>
+                    <span>Network Explorer</span>
+                </button>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <div class="avatar">
+                        <i class="ph ph-user"></i>
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name">Guest</span>
+                        <span class="user-role">Not logged in</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Topbar -->
+            <header class="topbar">
+                <button id="mobile-menu-btn" class="mobile-menu-btn">
+                    <i class="ph ph-list"></i>
+                </button>
+                <div class="topbar-title-wrapper">
+                    <h1 id="page-title" class="page-title">Dashboard</h1>
+                </div>
+                <div class="topbar-actions">
+                    <div class="status-badge pulse-active">
+                        <span class="pulse-dot"></span>
+                        Grid Status: Optimal
+                    </div>
+                    <button class="action-btn notifications-btn">
+                        <i class="ph ph-bell"></i>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Dynamic View Container -->
+            <div id="view-container" class="view-container">
+                <!-- Content injected via JS -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>
