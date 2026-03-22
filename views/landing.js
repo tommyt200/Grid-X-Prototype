@@ -8,9 +8,10 @@ const landingView = {
                         <span class="pulse-dot"></span>
                         Next-Gen P2P Energy Trading
                     </div>
-                    <h1 class="hero-title">버려지는 재생에너지,<br>지역 데이터센터의 <span>저렴한 동력</span>이 되다</h1>
+                    <h1 class="hero-title">분산에너지 특구의 <span>출력제한</span> 위기를 수익으로,<br>지역 전력을 기업의 <span>RE100 기회</span>로</h1>
                     <p class="hero-subtitle text-secondary">
-                        전남 지역 22.9kV 배전망 포화 문제 해결. 소규모 태양광 발전소와 산업용 수요처를 투명한 블록체인 위에서 AI 기반으로 매칭합니다.
+                        전남 지역 22.9kV 배전망 포화 문제를 정밀하게 해결하고, <br>
+                        소규모 재생에너지와 산업 수요처를 AI 실시간 매칭과 블록체인 정산으로 연결합니다.
                     </p>
                     <div class="hero-actions">
                         <button class="btn-primary lg" onclick="window.app.navigate('/generator')">발전소 등록하기</button>
